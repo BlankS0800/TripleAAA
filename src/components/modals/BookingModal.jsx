@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Calendar as CalendarIcon, Clock, User, Mail, Phone, Video, CheckCircle2, Copy, BookOpen } from 'lucide-react';
 import { teachersData } from '../../data/teachersData';
+import logoImg from '../../assets/logo.jpg';
 
 export default function BookingModal({ isOpen, onClose, preselectedCourse, preselectedTeacher, onOpenPayment }) {
   const [selectedCategory, setSelectedCategory] = useState('ciencias');
@@ -92,7 +93,7 @@ export default function BookingModal({ isOpen, onClose, preselectedCourse, prese
         <div className="p-5 sm:p-6 border-b border-slate-200 bg-[#f8fafc] relative flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             <img
-              src="/logo.jpg"
+              src={logoImg}
               alt="Triple AAA"
               className="w-13 h-13 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-[#008a9f]/30 shadow-sm"
             />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Lock, Mail, CheckCircle2, ArrowRight } from 'lucide-react';
+import logoImg from '../../assets/logo.jpg';
 
 export default function LoginModal({ isOpen, onClose }) {
   const [role, setRole] = useState('student'); // 'student', 'teacher', 'parent'
@@ -45,7 +46,7 @@ export default function LoginModal({ isOpen, onClose }) {
         <div className="p-6 border-b border-slate-200 bg-[#f8fafc] relative flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             <img
-              src="/logo.jpg"
+              src={logoImg}
               alt="Triple AAA"
               className="w-13 h-13 rounded-full object-cover border-2 border-[#008a9f]/30 shadow-sm"
             />

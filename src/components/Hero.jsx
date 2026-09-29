@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles, Award } from 'lucide-react';
 import SmartSearch from './SmartSearch';
+import logoImg from '../assets/logo.jpg';
 
 export default function Hero({ onOpenBooking, onOpenLogin, onSelectSubject }) {
   return (
@@ -16,7 +17,7 @@ export default function Hero({ onOpenBooking, onOpenLogin, onSelectSubject }) {
           <div className="relative group cursor-pointer mb-4">
             <div className="absolute -inset-1.5 bg-gradient-to-r from-[#008a9f]/30 to-[#8b7bb8]/30 rounded-full blur-sm group-hover:blur transition-all duration-300"></div>
             <img
-              src="/logo.jpg"
+              src={logoImg}
               alt="Triple AAA - Apoyo Académico Artístico"
               className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover border-4 border-white shadow-xl transform transition-transform duration-500 hover:scale-105"
             />

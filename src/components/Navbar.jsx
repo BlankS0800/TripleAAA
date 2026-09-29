@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronRight } from 'lucide-react';
+import logoImg from '../assets/logo.jpg';
 
 export default function Navbar({ onOpenLogin, onOpenBooking }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar({ onOpenLogin, onOpenBooking }) {
           <a href="#" className="flex items-center gap-3.5 group">
             <div className="relative">
               <img
-                src="/logo.jpg"
+                src={logoImg}
                 alt="Triple AAA - Apoyo Académico Artístico"
                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-[#008a9f]/30 shadow-sm group-hover:scale-105 group-hover:border-[#008a9f] transition-all duration-300"
               />

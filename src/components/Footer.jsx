@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, Video, Calendar } from 'lucide-react';
+import logoImg from '../assets/logo.jpg';
 
 export default function Footer({ onOpenLogin, onOpenBooking }) {
   return (
@@ -13,7 +14,7 @@ export default function Footer({ onOpenLogin, onOpenBooking }) {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-4">
               <img
-                src="/logo.jpg"
+                src={logoImg}
                 alt="Triple AAA - Bolivia"
                 className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-[#008a9f]/30 shadow-md hover:scale-105 transition-transform duration-300"
               />

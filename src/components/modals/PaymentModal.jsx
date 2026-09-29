@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, QrCode, CreditCard, Building2, CheckCircle2, ShieldCheck, Download, Smartphone } from 'lucide-react';
 import { pricingPlans, paymentMethodsInfo } from '../../data/pricingData';
+import logoImg from '../../assets/logo.jpg';
 
 export default function PaymentModal({ isOpen, onClose, selectedPlanId = 'clase-individual' }) {
   const [activePlanId, setActivePlanId] = useState(selectedPlanId);
@@ -50,7 +51,7 @@ export default function PaymentModal({ isOpen, onClose, selectedPlanId = 'clase-
         <div className="p-5 sm:p-6 border-b border-slate-200 bg-[#fafafa] relative flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/logo.jpg"
+              src={logoImg}
               alt="Triple AAA"
               className="w-10 h-10 rounded-full object-cover border border-slate-200"
             />
