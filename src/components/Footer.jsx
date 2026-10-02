@@ -6,10 +6,10 @@ export default function Footer({ onOpenLogin, onOpenBooking }) {
   return (
     <footer className="bg-white text-slate-600 pt-16 pb-12 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-slate-200">
-          
+
           {/* Brand Col - High Logo Presence */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-4">
@@ -88,7 +88,7 @@ export default function Footer({ onOpenLogin, onOpenBooking }) {
             <div className="space-y-2 text-xs text-slate-500">
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#008a9f]" />
-                <span>WhatsApp: +591 76543210</span>
+                <span>WhatsApp: +591 77777777</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#008a9f]" />
